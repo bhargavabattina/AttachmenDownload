@@ -18,7 +18,7 @@ for email in unread_emails:
 	message_date = email.ReceivedTime.date()
 	folder_name = message_date.strftime("%Y-%m-%d")
 	# Define the output directory for the attachment
-	output_directory = os.path.join(os.getcwd(), f"C:\\Users\\bharu\\OneDrive\\Desktop\\new\\{folder_name}")
+	output_directory = os.path.join(os.getcwd(), f"C:\\Users\\bharu\\OneDrive\\Desktop\\file\\{folder_name}")
 	os.makedirs(output_directory, exist_ok=True)
 
 	# Loop through all the attachments in the email
